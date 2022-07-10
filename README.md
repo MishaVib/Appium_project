@@ -39,7 +39,7 @@
 >url=http://hub.browserstack.com/wd/hub -- адрес запуска
 >```
 * Запуск тестов осуществляется следующей командой:
-> ```./gradlew clean browserstack -Ddevice=browserstack```
+> ```gradle clean browserstack -Ddevice=browserstack```
 ## Запуск тестов на эмуляторе девайса (установлена Android Studio)
 * Запуск Android studio:
 > a: (More Actions) -> SDK Manager -> Install\check need SDK Platform (for example: Android 11.0)
@@ -61,7 +61,7 @@
 * Запустите Appium Server on 4723 port 
   ![image](images/appium_server.png)
 * Запуск тестов осуществляется следующей командой:
-> ```./gradlew clean selenide -Ddevice=emulator```
+> ```gradle clean selenide -Ddevice=emulator```
 
 ## Запуск тестов на реальном (физическом) девайсе
 * Соедините ваш смартфон с PC через ADB (предварительно включите режим разработчика на девайсе) 
@@ -86,7 +86,7 @@ List of devices attached
 >```
 * Запустите Appium Server on 4723 port (по умолчанию)
 * Запуск тестов осуществляется следующей командой:
-> ```./gradlew clean selenide -Ddevice=real```
+> ```gradle clean selenide -Ddevice=real```
 
 ## Примечание
 * В папке config уже лежат примеры конфигов для всех типов запуска
